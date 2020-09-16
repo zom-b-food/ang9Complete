@@ -1,0 +1,33 @@
+<div *ngIf="customer">
+  <h2>Order for {{ customer.name | capitalize }}</h2>
+  <div class="fadeInDown">
+    <div class="row">
+      <div class="col-sm-3 thead-brand">Product Name</div>
+      <div class="col-sm-3 thead-brand">Color</div>
+      <div class="col-sm-3 thead-brand">Size</div>
+      <div class="col-sm-3 thead-brand">Price Billed</div>
+    </div>
+    <div *ngFor="let order of order">
+      <div class="row" *ngFor="let orderItem of order.orderItems">
+        <div class="col-sm-3">{{ orderItem.productName }}</div>
+        <div class="col-sm-3">{{ orderItem.itemColor }}</div>
+        <div class="col-sm-3">{{ orderItem.itemSize }}</div>
+        <div class="col-sm-3">{{ orderItem.itemCost | currency:'USD':'symbol' }}</div>
+      </div>
+      <div class="card mt50">
+        <div class="row">
+          <div class="col-sm-2"><button (click)="showNote()" class="btn btn-info">Purchase Note</button></div>
+          <div class="col-sm-10" [hidden]=!isVisible>{{ order.purchaseNote }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="row" *ngIf="!customer">
+      <div class="col">
+        No customer found
+      </div>
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <a routerLink="/customers">View All Customers</a>

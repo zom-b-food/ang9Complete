@@ -1,0 +1,100 @@
+/* element classes */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400, 700&display=swap');
+
+$primary: rgb(4,150,121);
+$secondary: rgb(5,118,128);
+$tertiary: #cde0dd;
+$active: #03687D;
+
+body{
+  margin:0;
+  padding:0;
+  font-family: 'Nunito', 'sans-serif';
+  font-size:16px;
+}
+
+a,
+  a:visited,
+  a:hover {
+    text-decoration: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+header {
+  background: $primary;
+  padding: 1em 0;
+  width:100%;
+  margin:0;
+
+  a {
+    color:white;
+    text-decoration: none;
+  }
+
+  a.logo {
+    font-weight:800;
+  }
+
+nav {
+  width: auto;
+  margin-left:25%;
+  margin-top:-25px;
+}
+
+.active, .current {
+  background-color:$active;
+}
+
+.notactive, .notcurrent {
+  background-color:transparent;
+}
+
+  ul {
+  display:flex;
+  float:right;
+  list-style-type: none;
+  margin:0;
+
+      li a {
+        padding:1em;
+        color:white;
+        &:hover {
+          background: $active;
+        }
+      }
+    }
+}
+
+hr {
+    margin-top:50px;
+    border: none;
+    border-top: 1px solid $tertiary;
+    color: $tertiary;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    width:75%;
+}
+
+footer {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    a {
+      display: flex;
+      align-items: center;
+  }
+}

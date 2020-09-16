@@ -1,0 +1,37 @@
+<app-filter-textbox (changed)="filter($event)"></app-filter-textbox>
+<div class="fadeInDown">
+  <div class="row">
+    <div class="col-sm-4 thead-brand" (click)="sort('name')"><span class="click">Name</span></div>
+    <div class="col-sm-4 thead-brand" (click)="sort('city')"><span class="click">City</span></div>
+    <div class="col-sm-4 thead-brand" (click)="sort('orderTotal')"><span class="click">Order Total</span></div>
+  </div>
+  <div class="row faux-table" *ngFor="let cust of filteredCustomers">
+    <div class="col-sm-4">
+      <a [routerLink]="['/orders', cust.id]">
+        {{ cust.name | capitalize }}
+      </a>
+    </div>
+    <div class="col-sm-4">{{ cust.city }}</div>
+    <div class="col-sm-4">{{ cust.orderTotal | currency:currencyCode:'symbol' }}</div>
+  </div>
+  <div class="allTotals" *ngIf="filteredCustomers && filteredCustomers.length">
+    <div class="row">
+      <div class="col-sm-4">&nbsp;</div>
+      <div class="col-sm-4">&nbsp;</div>
+      <div class="col-sm-4 thead-brand">All Order Totals</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">&nbsp;</div>
+      <div class="col-sm-4">&nbsp;</div>
+      <div class="col-sm-4">{{ customersOrderTotal | currency:currencyCode:'symbol' }}</div>
+    </div>
+  </div>
+  <div class="row" *ngIf="!filteredCustomers || !filteredCustomers.length">
+    <div class="col-sm-5">&nbsp;</div>
+    <div class="col-sm-4 mt20"><img src="../../../assets/img/triballs.svg"></div>
+    <div class="col-sm-3">&nbsp;</div>
+  </div>
+</div>
+<br />
+
+<h6>Number of Customers: {{ filteredCustomers.length }}</h6>

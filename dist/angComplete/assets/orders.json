@@ -1,0 +1,63 @@
+[
+      {
+            "customerId": 1,
+            "purchaseNote": "Verified skateboard license.",
+            "orderItems": [
+                {"id": 1, "productName": "Skateboard", "itemCost": 9.99, "itemColor": "turquoise", "itemSize": "reg"},
+                {"id": 2, "productName": "Knee Pads", "itemCost": 11.99, "itemColor": "gray", "itemSize": "reg"},
+                {"id": 3, "productName": "Roadrash Skin Balm", "itemCost": 3.99, "itemColor": "yellow", "itemSize": "large"}
+            ]
+      },
+      {
+            "customerId": 2,
+            "purchaseNote": "Verified boomerang license.",
+            "orderItems": [
+                {"id": 4, "productName": "Boomerang", "itemCost": 29.99, "itemColor": "red", "itemSize": "reg"},
+                {"id": 5, "productName": "Helmet", "itemCost": 19.99, "itemColor": "brown", "itemSize": "small"},
+                {"id": 6, "productName": "Kangaroo Saddle", "itemCost": 179.99, "itemColor": "mauve", "itemSize": "adjustable"}
+            ]
+      },
+      {
+            "customerId": 3,
+            "purchaseNote": "Verified swimming license.",
+            "orderItems": [
+                {"id": 7, "productName": "Budgie Smugglers", "itemCost": 19.99, "itemColor": "purple", "itemSize": "reg"},
+                {"id": 8, "productName": "Swimming Cap", "itemCost": 5.49, "itemColor": "peach-ish", "itemSize": "n/a"}
+            ]
+      },
+      {
+            "customerId": 4,
+            "purchaseNote": "Verified bow license.",
+            "orderItems": [
+                {"id": 9, "productName": "Bow", "itemCost": 250.99, "itemColor": "garnet red", "itemSize": "x-large"},
+                {"id": 10, "productName": "Arrows", "itemCost": 39.99, "itemColor": "ruby red", "itemSize": "18 inch"},
+                {"id": 11, "productName": "Targets", "itemCost": 5.99, "itemColor": "regular red", "itemSize": "life-size"}
+            ]
+      },
+      {
+            "customerId": 5,
+            "purchaseNote": "Verified picnic license.",
+            "orderItems": [
+                {"id": 12, "productName": "Ant Repellent", "itemCost": 4.49, "itemColor": "olive green", "itemSize": "large"},
+                {"id": 13, "productName": "Picnic Basket", "itemCost": 19.99, "itemColor": "grass green", "itemSize": "reg"}
+            ]
+      },
+      {
+            "customerId": 6,
+            "purchaseNote": "Verified surfing license.",
+            "orderItems": [
+                {"id": 14, "productName": "Surfboard", "itemCost": 299.99, "itemColor": "navy blue", "itemSize": "reg"},
+                {"id": 15, "productName": "Wax", "itemCost": 5.99, "itemColor": "cobalt blue", "itemSize": "reg"},
+                {"id": 16, "productName": "Shark Repellent", "itemCost": 15.99, "itemColor": "neon yellow", "itemSize": "n/a"}
+            ]
+      },
+      {
+            "customerId": 7,
+            "purchaseNote": "Verified pony license.",
+            "orderItems": [
+                {"id": 17, "productName": "Saddle", "itemCost": 500.00, "itemColor": "buckskin", "itemSize": "adjustable"},
+                {"id": 18, "productName": "Riding cap", "itemCost": 79.99, "itemColor": "stable-beige", "itemSize": "reg"},
+                {"id": 19, "productName": "Pony", "itemCost": 999.99, "itemColor": "black w/ brown spots", "itemSize": "8 stone"}
+            ]
+      }
+]

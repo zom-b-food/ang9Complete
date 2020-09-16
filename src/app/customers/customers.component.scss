@@ -1,0 +1,52 @@
+$primary: rgb(4,150,121);
+$secondary: rgb(5,118,128);
+$tertiary: #cde0dd;
+
+
+ul {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-wrap:wrap;
+
+  li {
+    background: $secondary;
+    color: $tertiary;
+    padding: 1em;
+    margin-right: 10px;
+    width: 20%;
+    height: 200px;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      color:white;
+      font-style: italic;
+      transition-timing-function: ease-in;
+      transition: 0.25s;
+      &:hover {
+        text-decoration: underline;
+        color:$tertiary;
+        transition-timing-function: ease-in;
+        transition: 0.25s;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+
+    p.name {
+      font-weight:800;
+      font-size:1.2rem;
+    }
+
+    p.country {
+      text-transform: uppercase;
+      font-size: .9rem;
+      flex-grow: 1;
+    }
+  }
+}
